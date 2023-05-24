@@ -40,7 +40,7 @@ func InitMySQL() {
 	)
 	DB, _ = gorm.Open(mysql.Open(viper.GetString("mysql.dns")), &gorm.Config{Logger: newLogger})
 	//if err != nil {
-	//	panic(any("failed to connect database"))
+	//	1_panic(any("failed to connect database"))
 	//}
 	//user := models.UserBasic{}
 	//DB.Find(&user)
